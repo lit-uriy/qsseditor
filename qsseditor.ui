@@ -954,6 +954,9 @@ p, li { white-space: pre-wrap; }
           </layout>
          </widget>
          <widget class="QWidget" name="tab4">
+          <property name="elevation" stdset="0">
+           <string>0dp</string>
+          </property>
           <attribute name="title">
            <string>СИ</string>
           </attribute>
@@ -1509,6 +1512,9 @@ p, li { white-space: pre-wrap; }
           </layout>
          </widget>
          <widget class="QWidget" name="tab5">
+          <property name="elevation" stdset="0">
+           <string>0dp</string>
+          </property>
           <attribute name="title">
            <string>Формирователь</string>
           </attribute>
