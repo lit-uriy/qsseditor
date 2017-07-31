@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>915</width>
-    <height>520</height>
+    <width>845</width>
+    <height>648</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
@@ -179,7 +179,7 @@
        <item row="1" column="0">
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <property name="tabsClosable">
           <bool>true</bool>
@@ -191,66 +191,65 @@
           <layout class="QGridLayout" name="gridLayout_7">
            <item row="0" column="0" colspan="2">
             <layout class="QGridLayout" name="gridLayout_6">
-             <item row="0" column="0">
-              <widget class="QRadioButton" name="radioButton">
-               <property name="text">
-                <string notr="true">RadioButton</string>
-               </property>
-              </widget>
+             <item row="4" column="0">
+              <widget class="QTimeEdit" name="timeEdit"/>
              </item>
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox">
-               <property name="text">
-                <string notr="true">CheckBox</string>
-               </property>
-               <property name="tristate">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2">
-              <widget class="QProgressBar" name="progressBar">
+             <item row="3" column="0">
+              <widget class="QSpinBox" name="spinBox">
                <property name="maximum">
-                <number>20</number>
-               </property>
-               <property name="value">
-                <number>0</number>
+                <number>100000</number>
                </property>
               </widget>
              </item>
-             <item row="1" column="0">
-              <widget class="QPushButton" name="pushButton">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
+             <item row="3" column="1">
+              <widget class="QDoubleSpinBox" name="doubleSpinBox">
+               <property name="maximum">
+                <double>1000000000000000000000.000000000000000</double>
                </property>
-               <property name="text">
-                <string notr="true">PushButton</string>
-               </property>
-               <property name="checkable">
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QDateEdit" name="dateEdit">
+               <property name="calendarPopup">
                 <bool>true</bool>
                </property>
               </widget>
              </item>
-             <item row="1" column="1">
-              <widget class="QToolButton" name="toolButton">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
+             <item row="3" column="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLineEdit" name="lineEdit">
+                 <property name="text">
+                  <string notr="true">Line edit</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_2">
+                 <property name="text">
+                  <string notr="true">Password</string>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="2">
+              <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLCDNumber" name="lcdNumber">
+               <property name="digitCount">
+                <number>10</number>
                </property>
-               <property name="text">
-                <string notr="true">ToolButton</string>
-               </property>
-               <property name="popupMode">
-                <enum>QToolButton::InstantPopup</enum>
+               <property name="intValue" stdset="0">
+                <number>1234567890</number>
                </property>
               </widget>
              </item>
-             <item row="1" column="2">
+             <item row="2" column="2">
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
                 <widget class="QComboBox" name="comboBoxReadOnly">
@@ -307,63 +306,86 @@
                </item>
               </layout>
              </item>
-             <item row="2" column="0">
-              <widget class="QSpinBox" name="spinBox"/>
-             </item>
              <item row="2" column="1">
-              <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
-             </item>
-             <item row="2" column="2">
-              <layout class="QHBoxLayout" name="horizontalLayout_2">
-               <item>
-                <widget class="QLineEdit" name="lineEdit">
-                 <property name="text">
-                  <string notr="true">Line edit</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_2">
-                 <property name="text">
-                  <string notr="true">Password</string>
-                 </property>
-                 <property name="echoMode">
-                  <enum>QLineEdit::Password</enum>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item row="3" column="0">
-              <widget class="QTimeEdit" name="timeEdit"/>
-             </item>
-             <item row="3" column="1">
-              <widget class="QDateEdit" name="dateEdit"/>
-             </item>
-             <item row="3" column="2">
-              <widget class="QDateTimeEdit" name="dateTimeEdit"/>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLCDNumber" name="lcdNumber">
-               <property name="digitCount">
-                <number>10</number>
+              <widget class="QToolButton" name="toolButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
                </property>
-               <property name="intValue" stdset="0">
-                <number>1234567890</number>
+               <property name="text">
+                <string notr="true">ToolButton</string>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::InstantPopup</enum>
                </property>
               </widget>
              </item>
-             <item row="4" column="1">
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="checkBox">
+               <property name="text">
+                <string notr="true">CheckBox</string>
+               </property>
+               <property name="tristate">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
               <widget class="QLabel" name="label">
                <property name="text">
                 <string notr="true">Label with &lt;a href=&quot;http://google.com&quot;&gt;link&lt;/a&gt;</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="2">
+             <item row="2" column="0">
+              <widget class="QPushButton" name="pushButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string notr="true">PushButton</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="radioButton">
+               <property name="text">
+                <string notr="true">RadioButton</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QProgressBar" name="progressBar">
+               <property name="maximum">
+                <number>20</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
               <widget class="QCommandLinkButton" name="commandLinkButton">
                <property name="text">
                 <string notr="true">CommandLinkButton</string>
+               </property>
+               <property name="description">
+                <string>Какая-то кнопка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QRadioButton" name="radioButton_2">
+               <property name="text">
+                <string notr="true">RadioButton</string>
                </property>
               </widget>
              </item>
@@ -412,6 +434,12 @@
              </item>
              <item row="1" column="2">
               <widget class="Line" name="line">
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <property name="midLineWidth">
+                <number>0</number>
+               </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
@@ -816,8 +844,8 @@ p, li { white-space: pre-wrap; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>253</width>
-                   <height>141</height>
+                   <width>535</width>
+                   <height>201</height>
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_9">
@@ -870,7 +898,7 @@ p, li { white-space: pre-wrap; }
                        <x>0</x>
                        <y>0</y>
                        <width>69</width>
-                       <height>69</height>
+                       <height>129</height>
                       </rect>
                      </property>
                      <attribute name="label">
@@ -922,6 +950,547 @@ p, li { white-space: pre-wrap; }
               </item>
              </layout>
             </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab4">
+          <attribute name="title">
+           <string>СИ</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="title">
+               <property name="font">
+                <font>
+                 <family>Roboto</family>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>СИ 1</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_19">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>152.07.2013</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3" rowspan="2">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="qsseditor.qrc">:/images/symbol_ok.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_18">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#939393;&quot;&gt;зав. №:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0" colspan="3">
+                <widget class="QLabel" name="label_20">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>ПРИМ-80 100 / Быстринскнефть</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Expanding</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>56</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>0,0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>24</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>%</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Expanding</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>10</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="1" column="2">
+                <widget class="QLabel" name="label_7">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>м3/ч</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Частота</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_5">
+                 <property name="font">
+                  <font>
+                   <family>Roboto Medium</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>1,3</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_8">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Гц</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_9">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Расход</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label_10">
+                 <property name="font">
+                  <font>
+                   <family>Roboto Medium</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>0,0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_12">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Импульсы</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="label_11">
+                 <property name="font">
+                  <font>
+                   <family>Roboto Medium</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>0,0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="label_13">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>имп</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_14">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Порция</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="label_15">
+                 <property name="font">
+                  <font>
+                   <family>Roboto Medium</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>0,0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QLabel" name="label_17">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>л</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QFormLayout" name="formLayout">
+               <property name="labelAlignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="verticalSpacing">
+                <number>4</number>
+               </property>
+               <item row="0" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>20–200</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#939393;&quot;&gt;м3/ч&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_24">
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#939393;&quot;&gt;л/имп&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_23">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#939393;&quot;&gt;k:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_26">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#939393;&quot;&gt;ΔQ:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>272</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>157</height>
+              </size>
+             </property>
+            </spacer>
            </item>
           </layout>
          </widget>
