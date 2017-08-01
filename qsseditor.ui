@@ -976,8 +976,8 @@ p, li { white-space: pre-wrap; }
           </layout>
          </widget>
          <widget class="QWidget" name="tab4">
-          <property name="elevation" stdset="0">
-           <string>0dp</string>
+          <property name="UiWidgetElevation" stdset="0">
+           <string>uiBackground</string>
           </property>
           <attribute name="title">
            <string>СИ</string>
@@ -997,6 +997,9 @@ p, li { white-space: pre-wrap; }
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
+             <property name="UiWidgetElevation" stdset="0">
+              <string>uiCards</string>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_2">
               <item>
                <widget class="QLabel" name="title">
@@ -1005,6 +1008,12 @@ p, li { white-space: pre-wrap; }
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
+                </property>
+                <property name="UiTextColor" stdset="0">
+                 <string>primary</string>
+                </property>
+                <property name="UiTextSize" stdset="0">
+                 <string>Title</string>
                 </property>
                </widget>
               </item>
@@ -1025,6 +1034,12 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Subheadline</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="0" column="3" rowspan="2">
@@ -1044,6 +1059,12 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>secondary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1067,6 +1088,12 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Caption</string>
                   </property>
                  </widget>
                 </item>
@@ -1093,10 +1120,16 @@ p, li { white-space: pre-wrap; }
                 <item>
                  <widget class="QLabel" name="label_3">
                   <property name="text">
-                   <string>0,0</string>
+                   <string>0,90</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Display3</string>
                   </property>
                  </widget>
                 </item>
@@ -1107,6 +1140,12 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Headline</string>
                   </property>
                  </widget>
                 </item>
@@ -1145,12 +1184,24 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_6">
                   <property name="text">
                    <string>Частота</string>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1162,6 +1213,12 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body2</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="0" column="2">
@@ -1172,12 +1229,24 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="1" column="0">
                  <widget class="QLabel" name="label_9">
                   <property name="text">
                    <string>Расход</string>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1189,12 +1258,24 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body2</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="2" column="0">
                  <widget class="QLabel" name="label_12">
                   <property name="text">
                    <string>Импульсы</string>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1206,6 +1287,12 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body2</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="2" column="2">
@@ -1216,12 +1303,24 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="3" column="0">
                  <widget class="QLabel" name="label_14">
                   <property name="text">
                    <string>Порция</string>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1233,6 +1332,12 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body2</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="3" column="2">
@@ -1242,6 +1347,12 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>primary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
@@ -1272,6 +1383,12 @@ p, li { white-space: pre-wrap; }
                     <property name="alignment">
                      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
                     </property>
+                    <property name="UiTextColor" stdset="0">
+                     <string>primary</string>
+                    </property>
+                    <property name="UiTextSize" stdset="0">
+                     <string>Body1</string>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -1281,6 +1398,12 @@ p, li { white-space: pre-wrap; }
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                    <property name="UiTextColor" stdset="0">
+                     <string>secondary</string>
+                    </property>
+                    <property name="UiTextSize" stdset="0">
+                     <string>Body1</string>
                     </property>
                    </widget>
                   </item>
@@ -1309,6 +1432,12 @@ p, li { white-space: pre-wrap; }
                     <property name="alignment">
                      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
                     </property>
+                    <property name="UiTextColor" stdset="0">
+                     <string>primary</string>
+                    </property>
+                    <property name="UiTextSize" stdset="0">
+                     <string>Body1</string>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -1318,6 +1447,12 @@ p, li { white-space: pre-wrap; }
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                    <property name="UiTextColor" stdset="0">
+                     <string>secondary</string>
+                    </property>
+                    <property name="UiTextSize" stdset="0">
+                     <string>Body1</string>
                     </property>
                    </widget>
                   </item>
@@ -1344,6 +1479,12 @@ p, li { white-space: pre-wrap; }
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                   </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>secondary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
+                  </property>
                  </widget>
                 </item>
                 <item row="0" column="0">
@@ -1353,6 +1494,12 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                  </property>
+                  <property name="UiTextColor" stdset="0">
+                   <string>secondary</string>
+                  </property>
+                  <property name="UiTextSize" stdset="0">
+                   <string>Body1</string>
                   </property>
                  </widget>
                 </item>
