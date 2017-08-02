@@ -407,7 +407,11 @@ void QssEditor::slotOpen()
     if(!continueWhenUnsaved())
         return;
 
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Open style"), QString(), tr("Qt Style Sheets (*.qss)"));
+    QString fileName = QFileDialog::getOpenFileName(this,
+                                                    tr("Open style"),
+                                                    QString(),
+                                                    tr("Qt Style Sheets (*.qss);;Cascade Style Sheets (*.css)")
+                                                    );
 
     if(fileName.isEmpty())
         return;
