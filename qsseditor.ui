@@ -2051,12 +2051,12 @@ p, li { white-space: pre-wrap; }
   <tabstop>doubleSpinBox</tabstop>
   <tabstop>lineEdit</tabstop>
   <tabstop>lineEdit_2</tabstop>
-  <tabstop>timeEdit</tabstop>
-  <tabstop>dateEdit</tabstop>
-  <tabstop>dateTimeEdit</tabstop>
-  <tabstop>verticalSlider</tabstop>
-  <tabstop>horizontalSlider</tabstop>
-  <tabstop>dial</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>doubleSpinBox</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>doubleSpinBox_2</tabstop>
   <tabstop>commandLinkButton</tabstop>
   <tabstop>listWidget</tabstop>
   <tabstop>listWidgetIcons</tabstop>
@@ -2066,6 +2066,16 @@ p, li { white-space: pre-wrap; }
   <tabstop>textEdit</tabstop>
   <tabstop>calendarWidget</tabstop>
   <tabstop>scrollArea</tabstop>
+  <tabstop>verticalSlider</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>horizontalSlider</tabstop>
+  <tabstop>radioButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>groupBox</tabstop>
+  <tabstop>horizontalSlider_2</tabstop>
+  <tabstop>timeEdit</tabstop>
+  <tabstop>dateTimeEdit</tabstop>
+  <tabstop>dial</tabstop>
  </tabstops>
  <resources>
   <include location="qsseditor.qrc"/>
