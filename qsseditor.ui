@@ -855,6 +855,9 @@ p, li { white-space: pre-wrap; }
              <property name="title">
               <string notr="true">GroupBox</string>
              </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
              <layout class="QGridLayout" name="gridLayout_3">
               <item row="0" column="0">
                <widget class="QScrollArea" name="scrollArea">
