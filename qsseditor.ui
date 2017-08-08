@@ -179,7 +179,7 @@
        <item row="1" column="0">
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <property name="tabsClosable">
           <bool>true</bool>
@@ -869,7 +869,7 @@ p, li { white-space: pre-wrap; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>423</width>
+                   <width>466</width>
                    <height>276</height>
                   </rect>
                  </property>
@@ -986,429 +986,6 @@ p, li { white-space: pre-wrap; }
            <string>СИ</string>
           </attribute>
           <layout class="QGridLayout" name="gridLayout_13">
-           <item row="0" column="0">
-            <widget class="QFrame" name="frame_2">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-             <property name="UiWidgetElevation" stdset="0">
-              <string>uiCards</string>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <widget class="QLabel" name="title">
-                <property name="text">
-                 <string>СИ 1</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="UiTextSize" stdset="0">
-                 <string>Title</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="Line" name="line_4">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <layout class="QGridLayout" name="gridLayout_11">
-                <item row="0" column="1">
-                 <widget class="QLabel" name="label_19">
-                  <property name="text">
-                   <string>152.07.2013</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Subheadline</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="3" rowspan="2">
-                 <widget class="QLabel" name="label_4">
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="qsseditor.qrc">:/images/symbol_ok.png</pixmap>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_18">
-                  <property name="text">
-                   <string>зав. №:</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                  <property name="UiTextColor" stdset="0">
-                   <string>secondary</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2">
-                 <spacer name="horizontalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="1" column="0" colspan="3">
-                 <widget class="QLabel" name="label_20">
-                  <property name="text">
-                   <string>ПРИМ-80 100 / Быстринскнефть</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Caption</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <item>
-                 <spacer name="horizontalSpacer_6">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Expanding</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_3">
-                  <property name="text">
-                   <string>0,90</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Display3</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_16">
-                  <property name="text">
-                   <string>%</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Headline</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_7">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Expanding</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>10</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <widget class="QSlider" name="horizontalSlider_2">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <layout class="QGridLayout" name="gridLayout_12">
-                <item row="1" column="2">
-                 <widget class="QLabel" name="label_7">
-                  <property name="text">
-                   <string>м3/ч</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_6">
-                  <property name="text">
-                   <string>Частота</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1">
-                 <widget class="QLabel" name="label_5">
-                  <property name="text">
-                   <string>1,3</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Body2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2">
-                 <widget class="QLabel" name="label_8">
-                  <property name="text">
-                   <string>Гц</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QLabel" name="label_9">
-                  <property name="text">
-                   <string>Расход</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QLabel" name="label_10">
-                  <property name="text">
-                   <string>0,0</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Body2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QLabel" name="label_12">
-                  <property name="text">
-                   <string>Импульсы</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QLabel" name="label_11">
-                  <property name="text">
-                   <string>0,0</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Body2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="2">
-                 <widget class="QLabel" name="label_13">
-                  <property name="text">
-                   <string>имп</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QLabel" name="label_14">
-                  <property name="text">
-                   <string>Порция</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="1">
-                 <widget class="QLabel" name="label_15">
-                  <property name="text">
-                   <string>0,0</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="UiTextSize" stdset="0">
-                   <string>Body2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="2">
-                 <widget class="QLabel" name="label_17">
-                  <property name="text">
-                   <string>л</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <widget class="Line" name="line_5">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <layout class="QFormLayout" name="formLayout">
-                <property name="labelAlignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="verticalSpacing">
-                 <number>4</number>
-                </property>
-                <item row="0" column="1">
-                 <layout class="QHBoxLayout" name="horizontalLayout_5">
-                  <item>
-                   <widget class="QLabel" name="label_21">
-                    <property name="text">
-                     <string>20–200</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="label_22">
-                    <property name="text">
-                     <string>м3/ч</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                    </property>
-                    <property name="UiTextColor" stdset="0">
-                     <string>secondary</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_8">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>40</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-                <item row="1" column="1">
-                 <layout class="QHBoxLayout" name="horizontalLayout_6">
-                  <item>
-                   <widget class="QLabel" name="label_24">
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="label_25">
-                    <property name="text">
-                     <string>л/имп</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                    </property>
-                    <property name="UiTextColor" stdset="0">
-                     <string>secondary</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_9">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>40</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QLabel" name="label_23">
-                  <property name="text">
-                   <string>k:</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                  <property name="UiTextColor" stdset="0">
-                   <string>secondary</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_26">
-                  <property name="text">
-                   <string>ΔQ:</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                  </property>
-                  <property name="UiTextColor" stdset="0">
-                   <string>secondary</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </widget>
-           </item>
            <item row="0" column="1">
             <spacer name="horizontalSpacer_10">
              <property name="orientation">
@@ -1434,6 +1011,16 @@ p, li { white-space: pre-wrap; }
               </size>
              </property>
             </spacer>
+           </item>
+           <item row="0" column="0">
+            <widget class="DutPanel" name="widget_2" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -1927,6 +1514,12 @@ p, li { white-space: pre-wrap; }
     <slot>redo()</slot>
    </slots>
   </customwidget>
+  <customwidget>
+   <class>DutPanel</class>
+   <extends>QWidget</extends>
+   <header>dut_panel.h</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
  <tabstops>
   <tabstop>toolOpen</tabstop>
@@ -1970,7 +1563,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>radioButton_2</tabstop>
   <tabstop>pushButton_3</tabstop>
   <tabstop>groupBox</tabstop>
-  <tabstop>horizontalSlider_2</tabstop>
   <tabstop>timeEdit</tabstop>
   <tabstop>dateTimeEdit</tabstop>
   <tabstop>dial</tabstop>

@@ -42,6 +42,26 @@ unix:!mac {
     CONFIG += qscintilla2
 }
 
+
+#===============================================
+# DutPanel
+DUTPANEL = d:\\001-Work\\300-soft\\ru_experiments\\ui_7_widgets
+SOURCES += $$DUTPANEL/dut_panel.cpp \
+           $$DUTPANEL/frame_dutcard.cpp \
+           $$DUTPANEL/frame_duttable.cpp
+
+HEADERS += $$DUTPANEL/dut_panel.h \
+           $$DUTPANEL/frame_dutcard.h \
+           $$DUTPANEL/frame_duttable.h
+
+FORMS   += $$DUTPANEL/dut_panel.ui \
+           $$DUTPANEL/frame_dutcard.ui \
+           $$DUTPANEL/frame_duttable.ui
+
+INCLUDEPATH *= $$DUTPANEL/
+DEPENDPATH  *= $$DUTPANEL/
+
+
 QSCINTILLA_INTERNAL=$$(QSCINTILLA_INTERNAL)
 equals(QSCINTILLA_INTERNAL, 1)|win32|mac {
     message("Using internal QScintilla")
