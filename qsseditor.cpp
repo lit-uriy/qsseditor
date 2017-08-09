@@ -118,11 +118,11 @@ QssEditor::QssEditor(QWidget *parent) :
     mdi->resize(160, 80);
 
 #if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
-    ui->tree->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
-    ui->table->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+//    ui->tree->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
+//    ui->table->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 #else
-    ui->tree->header()->setResizeMode(QHeaderView::ResizeToContents);
-    ui->table->horizontalHeader()->setResizeMode(QHeaderView::ResizeToContents);
+//    ui->tree->header()->setResizeMode(QHeaderView::ResizeToContents);
+//    ui->table->horizontalHeader()->setResizeMode(QHeaderView::ResizeToContents);
 #endif
 
     ui->tree->topLevelItem(0)->setExpanded(true);
