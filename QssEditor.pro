@@ -61,6 +61,9 @@ FORMS   += $$DUTPANEL/dut_panel.ui \
 INCLUDEPATH *= $$DUTPANEL/
 DEPENDPATH  *= $$DUTPANEL/
 
+RESOURCES += $$DUTPANEL/icons.qrc
+
+#===============================================
 
 QSCINTILLA_INTERNAL=$$(QSCINTILLA_INTERNAL)
 equals(QSCINTILLA_INTERNAL, 1)|win32|mac {
