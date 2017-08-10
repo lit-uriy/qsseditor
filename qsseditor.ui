@@ -114,6 +114,35 @@
           </spacer>
          </item>
          <item>
+          <widget class="QToolButton" name="toolDisable">
+           <property name="toolTip">
+            <string>Options</string>
+           </property>
+           <property name="text">
+            <string>D</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextOnly</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <widget class="QToolButton" name="toolOptions">
            <property name="toolTip">
             <string>Options</string>

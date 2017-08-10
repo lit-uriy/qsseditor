@@ -156,6 +156,11 @@ QssEditor::QssEditor(QWidget *parent) :
     ui->text->setFocus();
     ui->text->installEventFilter(this);
 
+    // Запрет виджетов
+    for (int i = 0; i < ui->tabWidget->count(); ++i) {
+        connect(ui->toolDisable, SIGNAL(toggled(bool)), ui->tabWidget->widget(i), SLOT(setDisabled(bool)));
+    }
+
     restoreLastFiles();
 
     QTimer::singleShot(0, this, SLOT(slotDelayedOpen()));
