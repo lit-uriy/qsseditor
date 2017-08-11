@@ -44,27 +44,11 @@ unix:!mac {
 
 
 #===============================================
-# DutPanel
-DUTPANEL = d:\\001-Work\\300-soft\\ru_experiments\\ui_7_widgets
-SOURCES += $$DUTPANEL/dut_panel.cpp \
-           $$DUTPANEL/frame_dutcard.cpp \
-           $$DUTPANEL/frame_duttable.cpp \
-           $$DUTPANEL/frame_flowgenerator.cpp
+# Testing widgets
+DUTPANELPATH = d:\\001-Work\\300-soft\\ru_experiments\\ui_7_widgets
 
-HEADERS += $$DUTPANEL/dut_panel.h \
-           $$DUTPANEL/frame_dutcard.h \
-           $$DUTPANEL/frame_duttable.h \
-           $$DUTPANEL/frame_flowgenerator.h
-
-FORMS   += $$DUTPANEL/dut_panel.ui \
-           $$DUTPANEL/frame_dutcard.ui \
-           $$DUTPANEL/frame_duttable.ui \
-           $$DUTPANEL/frame_flowgenerator.ui
-
-INCLUDEPATH *= $$DUTPANEL/
-DEPENDPATH  *= $$DUTPANEL/
-
-RESOURCES += $$DUTPANEL/icons.qrc
+include($$DUTPANELPATH/dut_panel.pri)
+include($$DUTPANELPATH/flowgenerator.pri)
 
 #===============================================
 
