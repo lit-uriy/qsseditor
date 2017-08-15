@@ -1119,6 +1119,84 @@ p, li { white-space: pre-wrap; }
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="tabFloatButton">
+          <attribute name="title">
+           <string>Float Button</string>
+          </attribute>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="UiWidgetElevation" stdset="0">
+            <string>uiFloatButton</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>160</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="UiWidgetElevation" stdset="0">
+            <string>uiFloatButton</string>
+           </property>
+           <property name="UiWidgetColor" stdset="0">
+            <string>primary</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="stopFloatButton">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>260</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="UiWidgetElevation" stdset="0">
+            <string>uiFloatButton</string>
+           </property>
+           <property name="UiWidgetColor" stdset="0">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="playFloatButton">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>260</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="UiWidgetElevation" stdset="0">
+            <string>uiFloatButton</string>
+           </property>
+           <property name="UiWidgetColor" stdset="0">
+            <string/>
+           </property>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>
