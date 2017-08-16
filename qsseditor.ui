@@ -1196,6 +1196,25 @@ p, li { white-space: pre-wrap; }
             <string/>
            </property>
           </widget>
+          <widget class="FloatingActionButton" name="playFloatButton_2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>360</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="UiWidgetElevation" stdset="0">
+            <string>uiFloatButton</string>
+           </property>
+           <property name="UiWidgetColor" stdset="0">
+            <string/>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
@@ -1229,6 +1248,11 @@ p, li { white-space: pre-wrap; }
    <extends>QWidget</extends>
    <header>widgets/frame_flowgenerator.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FloatingActionButton</class>
+   <extends>QPushButton</extends>
+   <header>widgets/floating_action_button.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
