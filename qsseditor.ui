@@ -1227,7 +1227,7 @@ p, li { white-space: pre-wrap; }
   <customwidget>
    <class>FrameFlowGenerator</class>
    <extends>QWidget</extends>
-   <header>frame_flowgenerator.h</header>
+   <header>widgets/frame_flowgenerator.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
