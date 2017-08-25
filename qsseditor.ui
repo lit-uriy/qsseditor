@@ -208,7 +208,7 @@
        <item row="1" column="0">
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>3</number>
+          <number>0</number>
          </property>
          <property name="tabsClosable">
           <bool>true</bool>
@@ -456,11 +456,14 @@
                <property name="value">
                 <number>30</number>
                </property>
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
+               <property name="invertedAppearance">
+                <bool>true</bool>
                </property>
                <property name="tickPosition">
-                <enum>QSlider::TicksAbove</enum>
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+               <property name="tickInterval">
+                <number>10</number>
                </property>
               </widget>
              </item>
@@ -918,7 +921,7 @@ p, li { white-space: pre-wrap; }
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>466</width>
+                   <width>442</width>
                    <height>276</height>
                   </rect>
                  </property>
@@ -1216,6 +1219,44 @@ p, li { white-space: pre-wrap; }
            </property>
           </widget>
          </widget>
+         <widget class="QWidget" name="tabTitle">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="title">
+           <string>Заголовок</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="WindowTitleBar" name="tutu" native="true"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -1253,6 +1294,12 @@ p, li { white-space: pre-wrap; }
    <class>FloatingActionButton</class>
    <extends>QPushButton</extends>
    <header>widgets/floating_action_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WindowTitleBar</class>
+   <extends>QWidget</extends>
+   <header>widgets/window_titlebar.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <tabstops>
@@ -1468,7 +1515,6 @@ p, li { white-space: pre-wrap; }
   <slot>slotAboutQt()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="buttonGroup2"/>
   <buttongroup name="buttonGroup1"/>
  </buttongroups>
 </ui>

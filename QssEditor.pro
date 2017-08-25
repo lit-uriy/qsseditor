@@ -50,6 +50,7 @@ DUTPANELPATH = d:\\001-Work\\300-soft\\ru_experiments\\ui_7_widgets
 include($$DUTPANELPATH/dut_panel.pri)
 include($$DUTPANELPATH/flowgenerator.pri)
 include($$DUTPANELPATH/floating_button.pri)
+include($$DUTPANELPATH/titlebar.pri)
 
 #===============================================
 
