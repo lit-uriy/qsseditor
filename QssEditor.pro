@@ -52,6 +52,12 @@ include($$DUTPANELPATH/flowgenerator.pri)
 include($$DUTPANELPATH/floating_button.pri)
 include($$DUTPANELPATH/titlebar.pri)
 
+WIDGETSPATH = d:/001-Work/03-Ru/03-Ru-600/55-soft/src/gui/main/
+
+include($$WIDGETSPATH/measure_frame.pri)
+include($$WIDGETSPATH/3rdparty/TableViewBuddy/tableviewbuddy.pri)
+
+
 #===============================================
 
 QSCINTILLA_INTERNAL=$$(QSCINTILLA_INTERNAL)

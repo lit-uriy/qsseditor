@@ -208,7 +208,7 @@
        <item row="1" column="0">
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>7</number>
          </property>
          <property name="tabsClosable">
           <bool>true</bool>
@@ -1257,6 +1257,49 @@ p, li { white-space: pre-wrap; }
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="tabSettings">
+          <attribute name="title">
+           <string>Настройки</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="FrameMeasureConfig" name="widget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>432</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>468</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -1299,6 +1342,12 @@ p, li { white-space: pre-wrap; }
    <class>WindowTitleBar</class>
    <extends>QWidget</extends>
    <header>widgets/window_titlebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FrameMeasureConfig</class>
+   <extends>QWidget</extends>
+   <header>widgets/frame_measure_config.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
