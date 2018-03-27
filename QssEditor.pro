@@ -45,14 +45,13 @@ unix:!mac {
 
 #===============================================
 # Testing widgets
-DUTPANELPATH = d:\\001-Work\\300-soft\\ru_experiments\\ui_7_widgets
+WIDGETSPATH = d:/001-Work/03-Ru/03-Ru-600/55-soft/src/gui/main
 
-include($$DUTPANELPATH/dut_panel.pri)
-include($$DUTPANELPATH/flowgenerator.pri)
-include($$DUTPANELPATH/floating_button.pri)
-include($$DUTPANELPATH/titlebar.pri)
+include($$WIDGETSPATH/dut_panel.pri)
+include($$WIDGETSPATH/flowgenerator.pri)
+include($$WIDGETSPATH/floating_button.pri)
+include($$WIDGETSPATH/titlebar.pri)
 
-WIDGETSPATH = d:/001-Work/03-Ru/03-Ru-600/55-soft/src/gui/main/
 
 include($$WIDGETSPATH/measure_frame.pri)
 include($$WIDGETSPATH/3rdparty/TableViewBuddy/tableviewbuddy.pri)
