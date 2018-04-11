@@ -55,6 +55,9 @@ include($$WIDGETSPATH/titlebar.pri)
 
 include($$WIDGETSPATH/measure_frame.pri)
 include($$WIDGETSPATH/3rdparty/TableViewBuddy/tableviewbuddy.pri)
+INCLUDEPATH *= $$WIDGETSPATH/../../ #global.h
+
+include($$WIDGETSPATH/addedit_instrument_dialog.pri)
 
 
 #===============================================
