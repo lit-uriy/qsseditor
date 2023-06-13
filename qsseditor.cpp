@@ -401,8 +401,11 @@ void QssEditor::appendCurrentProjectToHistory()
         }
     }
 
-    ui->toolOpen->menu()->insertAction(!actions.isEmpty() ? actions.first() : 0,
-                                       movedAction ? movedAction : new QAction(m_lastFileName, ui->toolOpen->menu()));
+    if (!movedAction) {
+        movedAction = new QAction(m_lastFileName, ui->toolOpen->menu());
+        connect(movedAction, SIGNAL(triggered(bool)), this, SLOT(slotOpenFromHistoryMenu()));
+    }
+    ui->toolOpen->menu()->insertAction(!actions.isEmpty() ? actions.first() : 0, movedAction);
 }
 
 void QssEditor::resetWindowTitle()
