@@ -381,8 +381,9 @@ void QssEditor::appendCurrentProjectToHistory()
     if(m_lastFileName.isEmpty())
         return;
 
-    if(!ui->toolOpen->menu())
+    if(!ui->toolOpen->menu()){
         ui->toolOpen->setMenu(new QMenu(ui->toolOpen));
+    }
 
     QList<QAction *> actions = ui->toolOpen->menu()->actions();
     QAction *movedAction = 0;
