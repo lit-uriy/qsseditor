@@ -29,6 +29,7 @@
 #include <QTimer>
 #include <QMenu>
 #include <QDir>
+#include <QCompleter>
 
 #include "searchandreplace.h"
 #include "qscilexerqss.h"
@@ -95,6 +96,15 @@ QssEditor::QssEditor(QWidget *parent) :
     QAction *act = toolButtonMenu->addAction("Item3");
     act->setEnabled(false);
     ui->toolButton->setMenu(toolButtonMenu);
+
+
+    //
+    QStringList wordList;
+    wordList << "alpha" << "omega" << "omicron" << "zeta";
+    QCompleter *completer = new QCompleter(wordList, this);
+    ui->lineEdit->setCompleter(completer);
+
+
 
     m_timerDelayedApply = new QTimer(this);
     m_timerDelayedApply->setSingleShot(true);
