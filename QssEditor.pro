@@ -1,9 +1,10 @@
 TARGET = QssEditor
 TEMPLATE = app
 QT += core gui
+QT += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT *= widgets printsupport
-mac: greaterThan(QT_MAJOR_VERSION, 4): QT *= macextras
+macx: greaterThan(QT_MAJOR_VERSION, 4): QT *= macextras
 
 NVER1=0
 NVER2=6
@@ -45,19 +46,21 @@ unix:!mac {
 
 #===============================================
 # Testing widgets
-WIDGETSPATH = d:/001-Work/03-Ru/03-Ru-600/55-soft/src/gui/main
+WIDGETSPATH = d:/001-Work/03-Ru/03-Ru-600/55-soft/src/gui/dashboard
 
-include($$WIDGETSPATH/dut_panel.pri)
-include($$WIDGETSPATH/flowgenerator.pri)
-include($$WIDGETSPATH/floating_button.pri)
-include($$WIDGETSPATH/titlebar.pri)
+#include($$WIDGETSPATH/../dialogs/addedit_instrument_dialog.pri)
+#include($$WIDGETSPATH/dut_panel.pri)
+#include($$WIDGETSPATH/flowgenerator.pri)
+#include($$WIDGETSPATH/floating_button.pri)
+#include($$WIDGETSPATH/titlebar.pri)
 
 
-include($$WIDGETSPATH/measure_frame.pri)
-include($$WIDGETSPATH/3rdparty/TableViewBuddy/tableviewbuddy.pri)
-INCLUDEPATH *= $$WIDGETSPATH/../../ #global.h
+#include($$WIDGETSPATH/etalon.pri)
+#include($$WIDGETSPATH/measure_frame.pri)
+#include($$WIDGETSPATH/3rdparty/TableViewBuddy/tableviewbuddy.pri)
+#INCLUDEPATH *= $$WIDGETSPATH/../../ #global.h
 
-include($$WIDGETSPATH/addedit_instrument_dialog.pri)
+
 
 
 #===============================================
