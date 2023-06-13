@@ -173,6 +173,10 @@ QssEditor::QssEditor(QWidget *parent) :
 
     connect(ui->lineEdit, SIGNAL(textChanged(QString)), this, SLOT(lineEditChanged()));
 
+    connect(ui->altRowColors, &QCheckBox::clicked, this, [=] (bool checked) {
+        ui->table->setAlternatingRowColors(checked);
+    });
+
     restoreLastFiles();
 
     QTimer::singleShot(0, this, SLOT(slotDelayedOpen()));
