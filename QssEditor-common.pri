@@ -105,31 +105,31 @@ message(Translations: $$MTRANSLATIONS)
 # copy translations
 !isEmpty(LUPDATE) {
     message("lupdate is found, will update the translations")
-    QMAKE_POST_LINK += $$mle($$LUPDATE -no-obsolete $$_PRO_FILE_ -ts $$MTRANSLATIONS)
+    #QMAKE_POST_LINK += $$mle($$LUPDATE -no-obsolete $$_PRO_FILE_ -ts $$MTRANSLATIONS)
 }
 
 # lrelease for each ts
 !isEmpty(LRELEASE) {
     win32 {
         TRANSLATIONS_DIR="$${OUT_PWD}/$(DESTDIR_TARGET)/../translations"
-        QMAKE_POST_LINK += $$mle(if not exist \"$$TRANSLATIONS_DIR\" mkdir \"$$TRANSLATIONS_DIR\")
+#        QMAKE_POST_LINK += $$mle(if not exist \"$$TRANSLATIONS_DIR\" mkdir \"$$TRANSLATIONS_DIR\")
 
         for(ts, LANGUAGES) {
-            QMAKE_POST_LINK += $$mle($$LRELEASE \"$${_PRO_FILE_PWD_}\\ts\\$${ts}.ts\" -qm \"$$TRANSLATIONS_DIR\\$${ts}.qm\")
-            QMAKE_POST_LINK += $$mle(copy /Y \"$${_PRO_FILE_PWD_}\\ts\\$${ts}.png\" \"$$TRANSLATIONS_DIR\\$${ts}.png\")
+#            QMAKE_POST_LINK += $$mle($$LRELEASE \"$${_PRO_FILE_PWD_}\\ts\\$${ts}.ts\" -qm \"$$TRANSLATIONS_DIR\\$${ts}.qm\")
+#            QMAKE_POST_LINK += $$mle(copy /Y \"$${_PRO_FILE_PWD_}\\ts\\$${ts}.png\" \"$$TRANSLATIONS_DIR\\$${ts}.png\")
         }
 
-        QMAKE_POST_LINK += $$mle(copy /Y \"$${_PRO_FILE_PWD_}\\ts\\translations.conf\" \"$$TRANSLATIONS_DIR\\\")
+#        QMAKE_POST_LINK += $$mle(copy /Y \"$${_PRO_FILE_PWD_}\\ts\\translations.conf\" \"$$TRANSLATIONS_DIR\\\")
     } else {
         TRANSLATIONS_DIR="$${OUT_PWD}/translations"
-        QMAKE_POST_LINK += $$mle(mkdir -p \"$$TRANSLATIONS_DIR\")
+#        QMAKE_POST_LINK += $$mle(mkdir -p \"$$TRANSLATIONS_DIR\")
 
         for(ts, LANGUAGES) {
-            QMAKE_POST_LINK += $$mle($$LRELEASE \"$${_PRO_FILE_PWD_}/ts/$${ts}.ts\" -qm \"$$TRANSLATIONS_DIR/$${ts}.qm\")
-            QMAKE_POST_LINK += $$mle(cp -f \"$${_PRO_FILE_PWD_}/ts/$${ts}.png\" \"$$TRANSLATIONS_DIR/$${ts}.png\")
+#            QMAKE_POST_LINK += $$mle($$LRELEASE \"$${_PRO_FILE_PWD_}/ts/$${ts}.ts\" -qm \"$$TRANSLATIONS_DIR/$${ts}.qm\")
+#            QMAKE_POST_LINK += $$mle(cp -f \"$${_PRO_FILE_PWD_}/ts/$${ts}.png\" \"$$TRANSLATIONS_DIR/$${ts}.png\")
         }
 
-        QMAKE_POST_LINK += $$mle(cp -f \"$${_PRO_FILE_PWD_}/ts/translations.conf\" \"$$TRANSLATIONS_DIR/\")
+#        QMAKE_POST_LINK += $$mle(cp -f \"$${_PRO_FILE_PWD_}/ts/translations.conf\" \"$$TRANSLATIONS_DIR/\")
     }
 }
 
@@ -144,8 +144,8 @@ win32 {
     isEmpty(HOST64):!isEmpty(UPX) {
         message("UPX is found, will pack $$TARGET after linking")
 
-        QMAKE_POST_LINK += $$mle($$UPX -9 \"$${OUT_PWD}/$(DESTDIR_TARGET)\")
-        export(QMAKE_POST_LINK)
+#        QMAKE_POST_LINK += $$mle($$UPX -9 \"$${OUT_PWD}/$(DESTDIR_TARGET)\")
+#        export(QMAKE_POST_LINK)
     } else {
         warning("UPX is not found, will not pack $$TARGET")
     }
@@ -165,7 +165,7 @@ win32 {
 
     # sign
     !isEmpty(SIGNTOOL):exists($$CERT) {
-        QMAKE_POST_LINK += $$mle($$SIGNTOOL sign /d \"QSS Editor\" /du \"$$HTTPROOT\" /f \"$$CERT\" /tr \"$$RFC3161_SERVER\" /v \"$${OUT_PWD}/$(DESTDIR_TARGET)\")
+#        QMAKE_POST_LINK += $$mle($$SIGNTOOL sign /d \"QSS Editor\" /du \"$$HTTPROOT\" /f \"$$CERT\" /tr \"$$RFC3161_SERVER\" /v \"$${OUT_PWD}/$(DESTDIR_TARGET)\")
     }
 }
 
