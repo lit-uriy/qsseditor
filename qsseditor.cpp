@@ -177,6 +177,19 @@ QssEditor::QssEditor(QWidget *parent) :
         ui->table->setAlternatingRowColors(checked);
     });
 
+    ui->comboGridStyle->addItem("Qt::NoPen", (int)Qt::NoPen);
+    ui->comboGridStyle->addItem("Qt::SolidLine", (int)Qt::SolidLine);
+    ui->comboGridStyle->addItem("Qt::DashLine", (int)Qt::DashLine);
+    ui->comboGridStyle->addItem("Qt::DotLine", (int)Qt::DotLine);
+    ui->comboGridStyle->addItem("Qt::DashDotLine", (int)Qt::DashDotLine);
+    ui->comboGridStyle->addItem("Qt::DashDotDotLine", (int)Qt::DashDotDotLine);
+    ui->comboGridStyle->addItem("Qt::CustomDashLine", (int)Qt::CustomDashLine);
+
+    connect(ui->comboGridStyle, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [=] () {
+        int type = ui->comboGridStyle->currentData().toInt();
+        ui->table->setGridStyle((Qt::PenStyle)type);
+    });
+
     restoreLastFiles();
 
     QTimer::singleShot(0, this, SLOT(slotDelayedOpen()));
