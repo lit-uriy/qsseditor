@@ -433,8 +433,9 @@ void QssEditor::slotCssChanged()
 
 void QssEditor::slotApplyCss()
 {
-    ui->widgetAllWidgets->setStyleSheet(ui->text->text());
-    ui->toolButton->menu()->setStyleSheet(ui->widgetAllWidgets->styleSheet());
+//    ui->widgetAllWidgets->setStyleSheet(ui->text->text());
+//    ui->toolButton->menu()->setStyleSheet(ui->widgetAllWidgets->styleSheet());
+    qApp->setStyleSheet(ui->text->text());
 }
 
 void QssEditor::slotOpen()
