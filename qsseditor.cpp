@@ -171,6 +171,8 @@ QssEditor::QssEditor(QWidget *parent) :
         connect(ui->toolDisable, SIGNAL(toggled(bool)), ui->tabWidget->widget(i), SLOT(setDisabled(bool)));
     }
 
+    connect(ui->lineEdit, SIGNAL(textChanged(QString)), this, SLOT(lineEditChanged()));
+
     restoreLastFiles();
 
     QTimer::singleShot(0, this, SLOT(slotDelayedOpen()));
@@ -179,6 +181,21 @@ QssEditor::QssEditor(QWidget *parent) :
 QssEditor::~QssEditor()
 {
     delete ui;
+}
+
+void QssEditor::lineEditChanged()
+{
+//    ui->lineEdit->setProperty("UiWidgetStatus", "");
+
+    if (ui->lineEdit->text().contains("error")){
+        ui->lineEdit->setProperty("UiWidgetStatus", QVariant(QStringLiteral("error")));
+    }else{
+        ui->lineEdit->setProperty("UiWidgetStatus", QVariant(QStringLiteral("normal")));
+    }
+    ui->lineEdit->style()->unpolish(ui->lineEdit);
+    ui->lineEdit->style()->polish(ui->lineEdit);
+
+    qDebug() << "lineEdit:" << ui->lineEdit->property("UiWidgetStatus");
 }
 
 bool QssEditor::eventFilter(QObject *obj, QEvent *event)
